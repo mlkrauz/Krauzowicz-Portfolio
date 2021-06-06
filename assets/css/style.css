@@ -13,20 +13,34 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg_ColorDark);
+    margin: var(--marginToPageEdge);
 }
 
-.page-header {
+.standard-box {
     text-align: left;
     color: var(--titleColor);
     background-color: var(--bg_Color);
     padding: 1.5em;
-    margin: var(--marginToPageEdge) var(--marginToPageEdge) 0 var(--marginToPageEdge);
-
-    display: flex;
+    margin: .5em 0;
 }
 
-.nav ul {
-    flex-wrap: wrap;
-    flex-direction: horizontal;
-    justify-content: right;
+.page-header {
+    display: flex;
+    /* margin: var(--marginToPageEdge) var(--marginToPageEdge) 0 var(--marginToPageEdge); */
+
+    /* width: 100%; */
+}
+
+.page-header div {
+    flex:1
+}
+
+.page-header nav {
+    display: inline-flex;
+    flex: 1;
+}
+
+.page-header nav ul li {
+    display: inline-block;
+    margin-right: 1em;
 }
