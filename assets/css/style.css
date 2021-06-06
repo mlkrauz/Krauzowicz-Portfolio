@@ -5,6 +5,9 @@
     /* Element colors */
     --bg_ColorDark: #0a2a2a;
     --bg_Color: #249999;
+
+    /* Margins */
+    --marginToPageEdge: 2em
 }
 
 body {
@@ -16,12 +19,14 @@ body {
     text-align: left;
     color: var(--titleColor);
     background-color: var(--bg_Color);
-    padding: 30px;
+    padding: 1.5em;
+    margin: var(--marginToPageEdge) var(--marginToPageEdge) 0 var(--marginToPageEdge);
 
+    display: flex;
 }
 
 .nav ul {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: horizontal;
+    justify-content: right;
 }
