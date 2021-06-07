@@ -21,22 +21,36 @@ body {
     color: var(--titleColor);
     background-color: var(--bg_Color);
     padding: 1.5em;
-    margin: .5em 0;
-    border-radius: 5px;
+    margin: 2em 0;
+
+    border-top: 2rem double var(--bg_ColorDark);
+    border-right: 2rem double var(--bg_ColorDark);
+    border-top-right-radius: 100px;
 
     overflow: auto;
 }
 
 h1 {
     font-size: 300%;
-    padding-left: .1em;
-    border-left: 1rem double;
+    padding: 0 2em;
+    display: inline;
+
+    border-top-right-radius: 20px;
+    border-top: 0.25rem solid;
+    border-right: 0.25rem solid;   
+    border-bottom: 0.25rem solid; 
 }
 
 h2 {
     font-size: 200%;
-    padding-left: .1em;
-    border-left: 0.5rem double; 
+    padding: 0 2em;
+    display: inline;
+
+    border-top-right-radius: 15px;
+    border-top: 0.25rem solid; 
+    border-right: 0.25rem solid;
+    border-bottom: 0.25rem solid;
+    
 }
 
 .page-header {
@@ -70,4 +84,12 @@ h2 {
 .largeImg {
     width: 600px;
     height: 600px;
+}
+
+
+
+.repoCard {
+    border: 1em dashed black;
+
+    overflow: auto;
 }
