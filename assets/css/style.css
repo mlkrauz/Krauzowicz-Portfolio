@@ -67,8 +67,8 @@ h2 {
 }
 
 h3 {
-    position: relative;
-    display: inline;
+    position: absolute;
+    /* display: inline; */
     z-index: 1;
 }
 
@@ -99,29 +99,40 @@ h3 {
 .mediumImg {
     width: 250px;
     height: 250px;
-    float: left;
     padding: 0 .5em 0;
 }
 
 .largeImg {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
+    padding: 0 .5em 0;
     /* object-fit: cover; */
 }
 
 .repoFlexContainer {
     display: flex;
+    justify-content: space-around;
 }
 
 .repoCard {
-    flex: 1;
-    
+    position: relative;
     border: 1em dashed black;
 
     overflow: auto;
 }
 
+.repoCard h3,
+.repoCard p {
+    position: absolute;
+}
+
 /* Oversize flexbox cards for projects we want to highlight */
 .highlightedCard {
-    flex: 2;
+    /* flex: 2; */
+    flex-wrap: wrap;
+}
+
+.standardCard {
+    /* flex: 1; */
+    flex-wrap: wrap;
 }
