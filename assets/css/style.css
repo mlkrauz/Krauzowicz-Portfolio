@@ -22,6 +22,21 @@ body {
     background-color: var(--bg_Color);
     padding: 1.5em;
     margin: .5em 0;
+    border-radius: 5px;
+
+    overflow: auto;
+}
+
+h1 {
+    font-size: 300%;
+    padding-left: .1em;
+    border-left: 1rem double;
+}
+
+h2 {
+    font-size: 200%;
+    padding-left: .1em;
+    border-left: 0.5rem double; 
 }
 
 .page-header {
@@ -43,4 +58,16 @@ body {
 .page-header nav ul li {
     display: inline-block;
     margin-right: 1em;
+}
+
+.mediumImg {
+    width: 250px;
+    height: 250px;
+    float: left;
+    padding: 0 .5em 0;
+}
+
+.largeImg {
+    width: 600px;
+    height: 600px;
 }
