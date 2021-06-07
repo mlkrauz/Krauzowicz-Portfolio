@@ -31,20 +31,32 @@ body {
     overflow: auto;
 }
 
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*
+.titleFlavorText {
+    
+}
+*/
+
 h1 {
     font-size: 300%;
-    padding: 0 2em;
+    /* padding: 0 2em; */
     display: inline;
 
     border-top-right-radius: 20px;
     border-top: 0.25rem solid;
     border-right: 0.25rem solid;   
     border-bottom: 0.25rem solid; 
+
+    flex-wrap: wrap;
 }
 
 h2 {
     font-size: 200%;
-    padding: 0 2em;
+    /* padding: 0 2em; */
     display: inline;
 
     border-top-right-radius: 15px;
@@ -54,20 +66,29 @@ h2 {
     
 }
 
+h3 {
+    position: relative;
+    display: inline;
+    z-index: 1;
+}
+
 .page-header {
     display: flex;
+    justify-content: space-between;
     /* margin: var(--marginToPageEdge) var(--marginToPageEdge) 0 var(--marginToPageEdge); */
 
     /* width: 100%; */
 }
 
+/* 
 .page-header div {
-    flex:1
+    flex: 1;
 }
+*/
 
 .page-header nav {
     display: inline-flex;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .page-header nav ul li {
