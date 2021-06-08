@@ -36,15 +36,8 @@ p {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/*
-.titleFlavorText {
-    
-}
-*/
-
 h1 {
     font-size: 300%;
-    /* padding: 0 2em; */
     display: inline;
 
     border-top-right-radius: 20px;
@@ -57,39 +50,26 @@ h1 {
 
 h2 {
     font-size: 200%;
-    /* padding: 0 2em; */
     display: inline;
 
     border-top-right-radius: 15px;
     border-top: 0.25rem solid; 
     border-right: 0.25rem solid;
     border-bottom: 0.25rem solid;
-    
 }
 
 h3 {
     position: absolute;
-    /* display: inline; */
     z-index: 1;
 }
 
 .page-header {
     display: flex;
-    justify-content: space-between;
-    /* margin: var(--marginToPageEdge) var(--marginToPageEdge) 0 var(--marginToPageEdge); */
-
-    /* width: 100%; */
+    justify-content: space-evenly;
 }
-
-/* 
-.page-header div {
-    flex: 1;
-}
-*/
 
 .page-header nav {
     display: inline-flex;
-    /* flex: 1; */
 }
 
 .page-header nav ul li {
@@ -98,46 +78,49 @@ h3 {
 }
 
 .mediumImg {
-    width: 250px;
-    height: 250px;
-    padding: 0 .5em 0;
-    flex: 1 1 auto;
+    width: 16em;
+    height: 16em;
 }
 
 .largeImg {
-    width: 500px;
-    height: 500px;
-    padding: 0 .5em 0;
-    flex: 1 1 auto;
-    /* object-fit: cover; */
+    width: 32em;
+    height: 16em;
+}
+
+.mediumImg, .largeImg {
+    /* 
+    There's an extra ~.2em on the bottom margin from the sibling elements; I'm not experienced enough to fix it proper.
+    A slight padding adjustment should fix it. 
+    */
+    padding: .5em .5em .3em;
+    flex: 1 1 auto; 
+
+    border-top-right-radius: 2.5em;
+    border-bottom-left-radius: 2.5em;
 }
 
 .repoFlexContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    
+    row-gap: 2em;
+    column-gap: 2em;
+
+    margin: 2em 0 0 0;
 }
 
 .repoCard {
     position: relative;
-    border: 1em dashed black;
+    background-color: var(--bg_ColorDark);
     width: min-content;
     height: min-content;
+    align-self: center;
+
+    border-top-right-radius: 2.5em;
+    border-bottom-left-radius: 2.5em;
 }
 
 .repoCard h3,
 .repoCard p {
     position: absolute;
-}
-
-/* Oversize flexbox cards for projects we want to highlight */
-.highlightedCard {
-    /* flex: 2; */
-    flex-wrap: wrap;
-}
-
-.standardCard {
-    /* flex: 1; */
-    flex-wrap: wrap;
 }
