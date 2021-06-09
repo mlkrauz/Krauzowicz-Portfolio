@@ -5,16 +5,17 @@
     /* Element colors */
     --bg_ColorDark: #0a2a2a;
     --bg_Color: #249999;
-    /* --bg_Color: #20d7e4; */ 
+    --header_Color: #a17c36; 
 
     /* Margins */
-    --marginToPageEdge: 2em
+    
 }
 
+/* ________________Page standards________________ */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg_ColorDark);
-    margin: var(--marginToPageEdge);
+    margin: 2em;
     size: 12px;
 }
 
@@ -32,11 +33,14 @@ body {
     overflow: auto;
 }
 
+/* ________________Standard text________________ */
 p,
 li {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
 
+/* ________________Standard HTML headers________________ */
 h1 {
     font-size: 300%;
     display: inline;
@@ -53,22 +57,23 @@ h2 {
 
 h3 {
     position: absolute;
+    left: .25em;
     z-index: 1;
-
     border-top-right-radius: 15px;
 }
 
 h1,
 h2,
 h3 {
-    border-top: 0.25rem solid; 
-    border-right: 0.25rem solid;
-    border-bottom: 0.25rem solid;
+    background-color: var(--header_Color);
+    padding: 0 1em;
+    border: 0.25rem solid; 
 }
 
+/* ________________The big header________________ */
 .page-header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .page-header nav {
@@ -80,6 +85,7 @@ h3 {
     margin-right: 1em;
 }
 
+/* ________________About me________________ */
 .aboutMe div {
     display: inline-flex;
     justify-content: start;
@@ -89,6 +95,7 @@ h3 {
     display: inline-block;
 }
 
+/* ________________Images________________ */
 .mediumImg {
     width: 16em;
     height: 16em;
@@ -110,6 +117,8 @@ h3 {
     border-top-right-radius: 2.5em;
     border-bottom-left-radius: 2.5em;
 }
+
+/* ________________Repocards/gallery________________ */
 
 .repoFlexContainer {
     display: flex;
@@ -135,4 +144,11 @@ h3 {
 .repoCard h3,
 .repoCard p {
     position: absolute;
+}
+
+.language {
+    position: absolute;
+    top: 2.5em;
+    left: .75em;
+    font-weight: bolder;
 }
