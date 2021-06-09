@@ -4,8 +4,8 @@
 
     /* Element colors */
     --bg_ColorDark: #0a2a2a;
-    /* --bg_Color: #249999; */
-    --bg_Color: #20d7e4; 
+    --bg_Color: #249999;
+    /* --bg_Color: #20d7e4; */ 
 
     /* Margins */
     --marginToPageEdge: 2em
@@ -32,19 +32,15 @@ body {
     overflow: auto;
 }
 
-p {
+p,
+li {
     font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
     font-size: 300%;
     display: inline;
-
     border-top-right-radius: 20px;
-    border-top: 0.25rem solid;
-    border-right: 0.25rem solid;   
-    border-bottom: 0.25rem solid; 
-
     flex-wrap: wrap;
 }
 
@@ -53,14 +49,21 @@ h2 {
     display: inline;
 
     border-top-right-radius: 15px;
-    border-top: 0.25rem solid; 
-    border-right: 0.25rem solid;
-    border-bottom: 0.25rem solid;
 }
 
 h3 {
     position: absolute;
     z-index: 1;
+
+    border-top-right-radius: 15px;
+}
+
+h1,
+h2,
+h3 {
+    border-top: 0.25rem solid; 
+    border-right: 0.25rem solid;
+    border-bottom: 0.25rem solid;
 }
 
 .page-header {
@@ -75,6 +78,15 @@ h3 {
 .page-header nav ul li {
     display: inline-block;
     margin-right: 1em;
+}
+
+.aboutMe div {
+    display: inline-flex;
+    justify-content: start;
+    flex-wrap: wrap; 
+}
+.aboutMe div p {
+    display: inline-block;
 }
 
 .mediumImg {
@@ -93,7 +105,7 @@ h3 {
     A slight padding adjustment should fix it. 
     */
     padding: .5em .5em .3em;
-    flex: 1 1 auto; 
+    flex: 0 0 1; 
 
     border-top-right-radius: 2.5em;
     border-bottom-left-radius: 2.5em;
